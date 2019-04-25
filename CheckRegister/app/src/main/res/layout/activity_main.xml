@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textColor="#303030"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtfirstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DFDFDF"
+                android:hint="First Name"
+                android:imeOptions="actionNext"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textColor="#303030"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtlastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DFDFDF"
+                android:hint="Last Name"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:text="Gender"
+            android:textColor="#303030"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Male"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/fermale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fermale"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday"
+        android:textColor="#303030"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/birthday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:background="#DFDFDF"
+            android:hint="Birthday"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/selectbirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Select"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Address"
+        android:textColor="#303030"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#DFDFDF"
+        android:gravity="top"
+        android:hint="Address"
+        android:padding="5dp"
+        android:paddingTop="10dp"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Email"
+        android:textColor="#303030"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DFDFDF"
+        android:hint="Email"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/agree"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="22sp" />
+</LinearLayout>
