@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnPoint = (Button) findViewById(R.id.btnPoint);
         btnEqual = (Button) findViewById(R.id.btnEqual);
         txtDisplay = (TextView) findViewById(R.id.txtDisplay);
-        txtDisplay.
 
         btn0.setOnClickListener(this);
         btn1.setOnClickListener(this);
@@ -85,8 +84,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnSign.setOnClickListener(this);
         btnPoint.setOnClickListener(this);
         btnEqual.setOnClickListener(this);
-        txtDisplay.setTextColor("#FF0000");
-        txtDisplay.setTextSize("18");
     }
 
     @Override
@@ -96,7 +93,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (reset_flag) {
                 txtDisplay.setText("");
                 reset_flag = false;
-                txtDisplay.setTex
             }
             if (txtDisplay.getText().toString().equals("0")) txtDisplay.setText("");
             txtDisplay.append("0");
@@ -288,6 +284,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 txtDisplay.setText(Double.toString(Double.parseDouble(str)));
                 reset_flag = true;
             }
+        } else {
+        }
+    }
 
     /**
      * @param operand1
